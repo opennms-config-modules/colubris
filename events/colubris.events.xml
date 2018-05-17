@@ -1,5 +1,5 @@
 <!-- Start of auto generated data from MIB: COLUBRIS-802DOT11-MIB -->
-<events xmlns="http://xmlns.opennms.org/xsd/eventconf">
+<events xmlns="https://xmlns.opennms.org/xsd/eventconf">
     <event>
         <mask>
             <maskelement>
@@ -29,7 +29,8 @@
             coDot11CurrentSNRLevel&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#4]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; coDot11SNRLevelNotification trap received ifIndex=%parm[#1]%
-            ifDescr=%parm[#2]% coVirtualApSSID=%parm[#3]% coDot11CurrentSNRLevel=%parm[#4]%&lt;/p&gt;</logmsg>
+            ifDescr=%parm[#2]% coVirtualApSSID=%parm[#3]% coDot11CurrentSNRLevel=%parm[#4]%&lt;/p&gt;
+        </logmsg>
         <severity>Warning</severity>
         <alarm-data reduction-key="%uei%" alarm-type="1"/>
     </event>
@@ -115,7 +116,8 @@
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; coDot11UnauthorizedAPNotification trap received ifIndex=%parm[#1]%
             ifDescr=%parm[#2]% coDot11ScanSSID=%parm[#3]% coDot11ScanMacAddress=%parm[#4]% coDot11ScanChannel=%parm[#5]%
-            coDot11ScanPHYType=%parm[#6]%&lt;/p&gt;</logmsg>
+            coDot11ScanPHYType=%parm[#6]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <!-- End of auto generated data from MIB: COLUBRIS-802DOT11-MIB -->
@@ -144,7 +146,8 @@
             systemConfigurationVersion&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#2]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; configurationUpdateNotification trap received
-            configurationUpdateInfo=%parm[#1]% systemConfigurationVersion=%parm[#2]%&lt;/p&gt;</logmsg>
+            configurationUpdateInfo=%parm[#1]% systemConfigurationVersion=%parm[#2]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <event>
@@ -169,7 +172,8 @@
             configurationUpdateInfo&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#1]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; configurationLocalUpdateNotification trap received
-            configurationUpdateInfo=%parm[#1]%&lt;/p&gt;</logmsg>
+            configurationUpdateInfo=%parm[#1]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <event>
@@ -194,7 +198,8 @@
             certificateExpiryDate&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#1]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; certificateAboutToExpireNotification trap received
-            certificateExpiryDate=%parm[#1]%&lt;/p&gt;</logmsg>
+            certificateExpiryDate=%parm[#1]%&lt;/p&gt;
+        </logmsg>
         <severity>Minor</severity>
         <alarm-data reduction-key="%uei%" alarm-type="1"/>
     </event>
@@ -220,7 +225,8 @@
             certificateExpiryDate&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#1]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; certificateExpiredNotification trap received
-            certificateExpiryDate=%parm[#1]%&lt;/p&gt;</logmsg>
+            certificateExpiryDate=%parm[#1]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <event>
@@ -247,7 +253,8 @@
             systemFirmwareRevision&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#2]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; firmwareUpdateNotification trap received firmwareUpdateInfo=%parm[#1]%
-            systemFirmwareRevision=%parm[#2]%&lt;/p&gt;</logmsg>
+            systemFirmwareRevision=%parm[#2]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <!-- End of auto generated data from MIB: COLUBRIS-MAINTENANCE-MIB -->
@@ -277,7 +284,8 @@
             publicAccessStatusChangedCause&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#2]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; publicAccessStatusChangedTrap trap received publicAccessStatus=%parm[#1]%
-            publicAccessStatusChangedCause=%parm[#2]%&lt;/p&gt;</logmsg>
+            publicAccessStatusChangedCause=%parm[#2]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <event>
@@ -303,7 +311,8 @@
             publicAccessUsersCount&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#1]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; publicAccessUsersThresholdTrap trap received
-            publicAccessUsersCount=%parm[#1]%&lt;/p&gt;</logmsg>
+            publicAccessUsersCount=%parm[#1]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <event>
@@ -329,7 +338,8 @@
             publicAccessUserName&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#1]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; publicAccessUsersSessionStartTrap trap received
-            publicAccessUserName=%parm[#1]%&lt;/p&gt;</logmsg>
+            publicAccessUserName=%parm[#1]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <event>
@@ -355,7 +365,8 @@
             publicAccessUserName&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#1]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; publicAccessUsersSessionStopTrap trap received
-            publicAccessUserName=%parm[#1]%&lt;/p&gt;</logmsg>
+            publicAccessUserName=%parm[#1]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <event>
@@ -381,7 +392,8 @@
             publicAccessUserName&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#1]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; publicAccessUsersSessionFailTrap trap received
-            publicAccessUserName=%parm[#1]%&lt;/p&gt;</logmsg>
+            publicAccessUserName=%parm[#1]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <event>
@@ -462,7 +474,8 @@
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; publicAccessRetentionSessionMaxCountReachedTrap trap received
             publicAccessRetentionSessionsMaxCount=%parm[#1]%
-            publicAccessRetentionSessionsMaxTime=%parm[#2]%&lt;/p&gt;</logmsg>
+            publicAccessRetentionSessionsMaxTime=%parm[#2]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <!-- End of auto generated data from MIB: COLUBRIS-PUBLIC-ACCESS-RETENTION-MIB -->
@@ -498,7 +511,8 @@
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; satelliteUpNotification trap received satelliteName=%parm[#1]%
             satelliteDeviceId=%parm[#2]% satelliteMacAddress=%parm[#3]% satelliteIpAddress=%parm[#4]%
-            satelliteSSID=%parm[#5]%&lt;/p&gt;</logmsg>
+            satelliteSSID=%parm[#5]%&lt;/p&gt;
+        </logmsg>
         <severity>Warning</severity>
         <alarm-data reduction-key="%uei%" alarm-type="1"/>
     </event>
@@ -533,7 +547,8 @@
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; satelliteDownNotification trap received satelliteName=%parm[#1]%
             satelliteDeviceId=%parm[#2]% satelliteMacAddress=%parm[#3]% satelliteIpAddress=%parm[#4]%
-            satelliteSSID=%parm[#5]%&lt;/p&gt;</logmsg>
+            satelliteSSID=%parm[#5]%&lt;/p&gt;
+        </logmsg>
         <severity>Warning</severity>
         <alarm-data reduction-key="%uei%" alarm-type="1"/>
     </event>
@@ -568,7 +583,8 @@
             syslogMsgText&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#4]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; syslogSeverityNotification trap received syslogMsgNumber=%parm[#1]%
-            syslogMsgFacility=%parm[#2]% syslogMsgSeverity=%parm[#3]% syslogMsgText=%parm[#4]%&lt;/p&gt;</logmsg>
+            syslogMsgFacility=%parm[#2]% syslogMsgSeverity=%parm[#3]% syslogMsgText=%parm[#4]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <event>
@@ -600,7 +616,8 @@
             syslogMsgText&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#4]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; syslogRegExMatchNotification trap received syslogMsgNumber=%parm[#1]%
-            syslogMsgFacility=%parm[#2]% syslogMsgSeverity=%parm[#3]% syslogMsgText=%parm[#4]%&lt;/p&gt;</logmsg>
+            syslogMsgFacility=%parm[#2]% syslogMsgSeverity=%parm[#3]% syslogMsgText=%parm[#4]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <!-- End of auto generated data from MIB: COLUBRIS-SYSLOG-MIB -->
@@ -647,7 +664,8 @@
         <uei>uei.opennms.org/vendors/colubris/traps/adminAccessLoginNotification</uei>
         <event-label>COLUBRIS-SYSTEM-MIB defined trap event: adminAccessLoginNotification</event-label>
         <descr>&lt;p&gt;Sent after an administrator is sucessfully
-            authenticated.&lt;/p&gt;&lt;table&gt;&lt;/table&gt;</descr>
+            authenticated.&lt;/p&gt;&lt;table&gt;&lt;/table&gt;
+        </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; adminAccessLoginNotification trap received&lt;/p&gt;</logmsg>
         <severity>Indeterminate</severity>
     </event>
@@ -679,7 +697,8 @@
             systemSerialNumber&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#4]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; systemColdStart trap received systemProductName=%parm[#1]%
-            systemFirmwareRevision=%parm[#2]% systemConfigurationVersion=%parm[#3]% systemSerialNumber=%parm[#4]%&lt;/p&gt;</logmsg>
+            systemFirmwareRevision=%parm[#2]% systemConfigurationVersion=%parm[#3]% systemSerialNumber=%parm[#4]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <event>
@@ -799,7 +818,8 @@
             vpnClientRemoteIpAddress&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#3]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; colubrisVpnNewUserNotification trap received
-            vpnClientConnectionType=%parm[#1]% vpnClientIdentity=%parm[#2]% vpnClientRemoteIpAddress=%parm[#3]%&lt;/p&gt;</logmsg>
+            vpnClientConnectionType=%parm[#1]% vpnClientIdentity=%parm[#2]% vpnClientRemoteIpAddress=%parm[#3]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
     <event>
@@ -826,7 +846,8 @@
             vpnClientUpTime&lt;/b&gt;&lt;/td&gt;&lt;td&gt; %parm[#2]%;&lt;/td&gt;&lt;td&gt;&lt;p;&gt;&lt;/p&gt;&lt;/td;&gt;&lt;/tr&gt;&lt;/table&gt;
         </descr>
         <logmsg dest='logndisplay'>&lt;p&gt; colubrisVpnRemoveUserNotification trap received
-            vpnClientIdentity=%parm[#1]% vpnClientUpTime=%parm[#2]%&lt;/p&gt;</logmsg>
+            vpnClientIdentity=%parm[#1]% vpnClientUpTime=%parm[#2]%&lt;/p&gt;
+        </logmsg>
         <severity>Indeterminate</severity>
     </event>
 </events>
